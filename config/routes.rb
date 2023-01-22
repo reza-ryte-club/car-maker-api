@@ -5,5 +5,8 @@ Rails.application.routes.draw do
 #   Defines the root path route ("/")
 #   root "cars#index"
     post 'createFakeCars', to: 'cars#createFakeCars'
+    get 'getSpecificModel', to: 'cars#getSpecificModel'
+    post 'getSpecificMaker', to: 'cars#getSpecificMaker'
+    post 'listOfCars', to: 'cars#listOfCars'
     delete 'destroyRecentCars', to: 'cars#destroyRecentCars'
 end
